@@ -1,0 +1,222 @@
+/* Css reset */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* CSS variables */
+:root{
+  --navbar-height:59px;  
+}
+/* navigation bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    font-family:'Cabin', sans-serif ;
+    position: sticky;
+    top: 0px;
+}
+/* logo and image */
+#logo{
+    margin: 10px 24px;
+    
+}
+#logo img{
+    height: 62px;
+    width: 62px;
+    margin: 10px 10px;
+}
+/* list styling */
+/* #navbar{
+    position: relative;
+    font-family:'Cabin', sans-serif ;
+} */
+#navbar ul{
+   display: flex; 
+  
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+ }
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    /* list-style: none;
+    font-size: 1.3rem; */
+    display: block;
+    padding: 3px 22px;
+    border-radius: 25px;
+    text-decoration: none;
+    color: white;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+/* Home section  */
+#home{
+    display: flex;
+    height: 550px;
+    flex-direction: column;
+    padding: 3px 150px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    background: url("/foor_bck2.jpg") no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 642px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+}
+#home h1{
+    color: black;
+    text-align: center;
+}
+#home p{
+    color:black;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Baloo Bhai 2', cursive; 
+}
+/* services section  */
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid brown;
+    padding: 20px;
+    margin: 2px 0px ;
+    border-radius: 23px;
+    background-color: burlywood;
+
+}
+#services .box img{
+    /* border: 2px solid brown; */
+    height: 100px;
+    margin: auto;
+    display: block;
+
+    
+}
+#services .box p{
+    font-family:'Baloo Bhai 2', cursive; 
+}
+#services{}
+/* client section  */
+#client-section{
+    position: relative;
+    /* height: 350px; */
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url(/food_bck1.jpg)no-repeat center center/cover;
+    width: 100%;
+    height: 86%;
+    z-index:-1 ;
+    opacity: 0.5;
+
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.client-item{
+    padding:40px;
+}
+#clients img{
+    height: 130px;
+}
+/* contacts section  */
+#contact{
+    position: relative;
+
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    background: url(/contact.jpg)no-repeat center center/cover;
+
+
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input,#contact-box textarea{
+    width:100% ;
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-size: 1.1rem;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box form{
+    font-size: 1.3rem;
+    font-family: 'Baloo Bhai 2', cursive; 
+
+}
+
+footer {
+    background-color: black;
+    color: white;
+    margin: 0px;
+    padding: 5px;
+
+}
+
+
+
+/* utility class */
+.h-primary{
+    font-size: 3.8rem;
+    padding: 12px;
+   font-family:'Baloo Bhai 2', cursive; 
+ 
+}
+.h-secondry{
+    font-size: 2.4rem;
+    padding: 12px;
+    font-family:'Baloo Bhai 2', cursive; 
+    
+}
+.btn{
+    padding: 6px 20px;
+    border:  2px solid white;
+    background-color: brown;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+.center{
+    text-align: center;
+}
